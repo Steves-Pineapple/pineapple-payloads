@@ -8,7 +8,7 @@ source ./log.sh
 
 #  Functions
 function scan {
-    iwlist $1 scanning
+    iwlist $1 scanning | egrep 'Cell |Encryption|Quality|Last beacon|ESSID'
 }
 
 # Checking to make sure script is run as root
