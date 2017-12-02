@@ -16,4 +16,4 @@ function configureMacAddress {
 #####################################
 # MAIN
 #####################################
-configureMacAddress wlan0 $(generateMacAddress)
+configureMacAddress wlan0 $(generateMacAddress) || log err "could not change MAC Address"
