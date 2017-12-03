@@ -10,7 +10,7 @@ function generateMacAddress {
 }
 
 function configureMacAddress {
-    ifconfig $1 hw ether $(generateMacAddress)
+    ifconfig $1 hw ether generateMacAddress
 }
 
 #####################################
