@@ -17,5 +17,5 @@ function configureMacAddress {
 # MAIN
 #####################################
 [[ ! -z "$1" ]] && { 
-    configureMacAddress $1  || log err "could not change MAC Address"
+    configureMacAddress $1  || log err "could not change MAC Address for $1"
 }
