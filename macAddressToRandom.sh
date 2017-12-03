@@ -16,6 +16,10 @@ function configureMacAddress {
 #####################################
 # MAIN
 #####################################
-[[ ! -z "$1" ]] && { 
-    configureMacAddress $1  ( [[ ! -z $2 ]] || $(generateMacAddress) ) || log err "could not change MAC Address for $1"
-}
+if [[ ! -z "$1" ]]; then 
+    if [[ ! -z "$2" ]]; then
+        configureMacAddress $1 $2 || log err "could not change MAC Address for $1 to $2"
+    else
+        configureMacAddress $1 $(generateMacAddress) || log err "could not change MAC Address for $1"
+    fi
+fi
