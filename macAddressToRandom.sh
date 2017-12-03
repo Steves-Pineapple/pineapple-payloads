@@ -22,4 +22,5 @@ if [[ ! -z "$1" ]]; then
     else
         configureMacAddress $1 $(generateMacAddress) || log err "could not change MAC Address for $1"
     fi
+    ifconfig -a > /dev/null
 fi
