@@ -10,10 +10,12 @@ function generateMacAddress {
 }
 
 function configureMacAddress {
-    ifconfig $1 hw ether $2
+    ifconfig $1 hw ether $(generateMacAddress)
 }
 
 #####################################
 # MAIN
 #####################################
-configureMacAddress wlan0 $(generateMacAddress) || log err "could not change MAC Address"
+[[ -z "$1" ]] && { 
+    configureMacAddress $1  || log err "could not change MAC Address"
+}
