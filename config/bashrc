@@ -1,6 +1,5 @@
 # Variables
-pbin=../bin/
-ppayloads=../payload/
+readonly pbin=$(pwd)/bin/
 
 # Colors
 default="\033[39m"
