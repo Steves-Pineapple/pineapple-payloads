@@ -20,16 +20,16 @@ function pinapple-help {
 
 function pmotd {
     
-    echo "$green   .~~.   .~~. "
-    echo "$green  '. \ ' ' / .' "
-    echo "$red   .~ .~~~..~. "
-    echo "$red  : .~.'~'.~. :                       ==============================================================$default"
-    echo "$red ~ (   ) (   ) ~ $green   \||/    $default          $red=$default   Raspberry Pineapple WiFi                                 $red=$default"
-    echo "$red( : '~'.~.'~' : ) $green  \||/    $default          $red=$default   By Stephen Levine and Austin Barrett                     $red=$default"
-    echo "$red ~ .~ (   ) ~. ~ $yellow .<><><>.  $default          $red=$blue   https://github.com/Steves-Pineapple/pineapple-payloads   $red=$default"
-    echo "$red  (  : '~' :  )  $yellow.<><><><>. $default          $red==============================================================$default"
-    echo "$red   '~ .~~~. ~' $yellow  '<><><><>' $default                "
-    echo "$red       '~' $yellow       '<><><>'  $default                    "
+    echo -e "$green   .~~.   .~~. "
+    echo -e "$green  '. \ ' ' / .' "
+    echo -e "$red   .~ .~~~..~. "
+    echo -e "$red  : .~.'~'.~. :                       ==============================================================$default"
+    echo -e "$red ~ (   ) (   ) ~ $green   \||/    $default          $red=$default   Raspberry Pineapple WiFi                                 $red=$default"
+    echo -e "$red( : '~'.~.'~' : ) $green  \||/    $default          $red=$default   By Stephen Levine and Austin Barrett                     $red=$default"
+    echo -e "$red ~ .~ (   ) ~. ~ $yellow .<><><>.  $default          $red=$blue   https://github.com/Steves-Pineapple/pineapple-payloads   $red=$default"
+    echo -e "$red  (  : '~' :  )  $yellow.<><><><>. $default          $red==============================================================$default"
+    echo -e "$red   '~ .~~~. ~' $yellow  '<><><><>' $default                "
+    echo -e "$red       '~' $yellow       '<><><>'  $default                    "
 
 }
 
