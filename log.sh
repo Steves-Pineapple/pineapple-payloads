@@ -3,8 +3,6 @@
 ##################################
 #        Global Variables        #
 ##################################
-old=""
-wireless=""
 debugMode="$1"
 
 readonly thisScript=$(basename $0 | sed 's/\.sh//g')
