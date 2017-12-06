@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Config Options
-source ./log.sh
-source ./isroot.sh
+source ../payload/log.sh
+source ../payload/isroot.sh
 
 # Functions
 function generateMacAddress {

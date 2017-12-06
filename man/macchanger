@@ -1,0 +1,12 @@
+DESCRIPTION:
+    A simple script to change interface mac addresses to a set value or random value
+
+
+USAGE:
+    macchanger.sh [interface, macAddress]
+
+
+EXAMPLE:
+    macchanger.sh wlan0 ca:fe:ca:fe:ca:fe   # sets mac address for interface
+    - OR - 
+    macchanger.sh wlan0 ca:fe:ca:fe:ca:fe   # generates and sets randaom mac address for interface
