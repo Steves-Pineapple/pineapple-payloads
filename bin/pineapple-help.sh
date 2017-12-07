@@ -10,5 +10,5 @@ if [[ "$1" == "-h" ]] || [[ "$1" == "--help" ]]; then
 fi
 
 for f in $(dirname $(dirname $0))/bin/*.sh; do
-    readManual $(echo $f)
+    readManual $(basename $f | rev | cut -c4- | rev)
 done
