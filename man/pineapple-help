@@ -1,0 +1,6 @@
+DESCRIPTION:
+    List the cammands and help docs for all bin files
+
+
+USAGE:
+    pineapple-help.sh
