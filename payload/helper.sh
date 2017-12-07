@@ -1,6 +1,6 @@
 #!/bin/bash
 
 function readManual {
-    cat ../man/$1
+    cat $(dirname $(dirname $0))/man/$1
 }
 
