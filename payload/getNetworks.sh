@@ -15,4 +15,5 @@ function scan {
 #####################################
 # MAIN
 #####################################
-scan $1 || log err "Please check interface."
+[[ -z $1 ]] &&   log err "Please check interface." && exit 1
+scan $1 
