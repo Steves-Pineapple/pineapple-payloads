@@ -10,7 +10,7 @@ if [[ "$1" == "-h" || "$1" == "--help" ]] && [[ ! -z $1 ]]; then
     exit 
 fi
 
-1=''
+shift $1
 echo $1
 source $(dirname $(dirname $0))/payload/macAddressToRandom.sh
 
