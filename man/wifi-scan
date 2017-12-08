@@ -1,0 +1,10 @@
+DESCRIPTION:
+    A simple script to change interface mac addresses to a set value or random value
+
+
+USAGE:
+    wifi-scan.sh [interface]
+
+
+EXAMPLE:
+    wifi-scan.sh wlan0
