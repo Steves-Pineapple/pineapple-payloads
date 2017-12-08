@@ -10,6 +10,7 @@ function generateMacAddress {
 }
 
 function configureMacAddress {
+    echo ifconfig $1 hw ether $2
     ifconfig $1 hw ether $2
 }
 
@@ -20,7 +21,6 @@ if [[ ! -z "$1" ]]; then
     if [[ ! -z "$2" ]]; then
         configureMacAddress $1 $2 || log err "could not change MAC Address for $1 to $2"
     else
-        echo configureMacAddress $1 $(generateMacAddress)
         configureMacAddress $1 $(generateMacAddress) #|| log err "could not change MAC Address for $1"
     fi
     ifconfig -a > /dev/null # this is required for the address to be changable at  later date.
