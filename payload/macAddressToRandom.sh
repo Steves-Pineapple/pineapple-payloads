@@ -24,6 +24,7 @@ if [[ ! -z "$1" ]]; then
         configureMacAddress $1 $2 || log err "could not change MAC Address for $1 to $2"
     else
         echo HERE 2
+        echo configureMacAddress $1 $(generateMacAddress)
         configureMacAddress $1 $(generateMacAddress) || log err "could not change MAC Address for $1"
     fi
     echo HERE 
