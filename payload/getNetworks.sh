@@ -9,7 +9,7 @@ source $(dirname $0)/log.sh
 
 #  Functions
 function scan {
-    sudo iwlist $1 scanning | egrep 'Cell |Encryption|Quality|Last beacon|ESSID' | sed 's/ - /\n/g' | sed -E 's/^\s*?/\n/g' | egrep -v '^$'
+    sudo iwlist $1 scanning | egrep 'Cell |Encryption|Quality|Last beacon|ESSID' | sed 's/ - /\n/g' | sed -E 's/^\s*?/\n/g' | egrep -v '^$' | sed -E 's/CELL.*/=========================================/g'
 }
 
 #####################################
