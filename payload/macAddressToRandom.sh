@@ -2,7 +2,7 @@
 
 # Config Options
 source $(dirname $(dirname $0))/payload/log.sh
-source $(dirname $(dirname $0))/payload/isroot.sh
+# source $(dirname $(dirname $0))/payload/isroot.sh
 
 # Functions
 function generateMacAddress {
@@ -10,7 +10,7 @@ function generateMacAddress {
 }
 
 function configureMacAddress {
-    ifconfig $1 hw ether $2
+    sudo ifconfig $1 hw ether $2
 }
 
 #####################################
