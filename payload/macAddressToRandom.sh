@@ -10,7 +10,6 @@ function generateMacAddress {
 }
 
 function configureMacAddress {
-    echo sudo ifconfig $1 hw ether $2
     sudo ifconfig $1 hw ether $2
 }
 
