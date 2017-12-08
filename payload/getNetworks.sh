@@ -1,8 +1,8 @@
 #!/bin/bash
 # Config Options
 set -e
-source ./log.sh
-source ./isroot.sh
+source $(dirname $(dirname $0))/log.sh
+source $(dirname $(dirname $0))/isroot.sh
 
 # VARIABLES
 
