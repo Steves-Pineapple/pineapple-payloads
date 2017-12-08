@@ -14,4 +14,5 @@ set --
 echo $1
 source $(dirname $(dirname $0))/payload/macAddressToRandom.sh
 
+echo configureMacAddress $iface $2
 configureMacAddress $iface $2
