@@ -6,7 +6,6 @@ source $(dirname $(dirname $0))/payload/log.sh
 
 # Functions
 function generateMacAddress {
-    echo HERE 4    
     cat /dev/urandom | grep -Eoa "[a-f0-9]" | head -12 | sed ':a;N;$!ba;s/\n//g' | sed 's/../&:/g;s/:$//'
 }
 
