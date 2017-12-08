@@ -11,4 +11,4 @@ fi
 
 source $(dirname $(dirname $0))/payload/macAddressToRandom.sh
 
-configureMacAddress $1 $2
+# configureMacAddress $1 $2
